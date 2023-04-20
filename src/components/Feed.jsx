@@ -7,7 +7,9 @@ const Feed = () => {
    const [selectedCategory, setSelectedCategory] = useState("New");
    const [videos, setVideos] = useState(null);
    useEffect(() => {
-      fetchFromAPI(`search?q=${"music"}`).then((data) => setVideos(data.items));
+      fetchFromAPI(`search?q=${selectedCategory}`).then((data) =>
+         setVideos([...data.items])
+      );
       console.log(videos);
    }, [selectedCategory]);
 

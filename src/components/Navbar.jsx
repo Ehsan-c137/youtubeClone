@@ -10,8 +10,9 @@ const Navbar = () => {
          sx={{
             display: "flex",
             position: "sticky",
-            p: 1,
+            p: 2,
             background: "#000",
+            height: "10vh",
             justifyContent: "space-between",
          }}
          direction="row"

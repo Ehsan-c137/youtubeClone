@@ -12,6 +12,7 @@ function App() {
    return (
       <Box sx={{ backgroundColor: "#000" }}>
          <Navbar />
+
          <Routes>
             <Route path="/" element={<Feed />} />
             <Route path="/video/:id" element={<VideoDetail />} />

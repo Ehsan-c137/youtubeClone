@@ -10,14 +10,13 @@ const Feed = () => {
       fetchFromAPI(`search?q=${selectedCategory}`).then((data) =>
          setVideos([...data.items])
       );
-      console.log(videos);
    }, [selectedCategory]);
 
    return (
       <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
          <Box
             sx={{
-               height: { sx: "auto", md: "92vh" },
+               height: { sx: "auto", md: "100%" },
                borderRight: "1px solid #3d3d3d",
                px: { sx: 0, md: 2 },
             }}

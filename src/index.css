@@ -7,7 +7,7 @@
    width: 100% !important;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
    width: 0px;
    height: 5px;
 }
@@ -20,4 +20,4 @@
 
 ::-webkit-scrollbar-track {
    background-color: transparent;
-} */
+}

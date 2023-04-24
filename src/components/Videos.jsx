@@ -3,7 +3,7 @@ import { Stack, Box } from "@mui/material";
 import { VideoCard, ChannelCard } from "./index";
 import { BounceLoader } from "react-spinners";
 
-const Videos = ({ videos, direction }) => {
+const Videos = ({ videos, direction, justifyContent }) => {
    if (!videos)
       return (
          <Box
@@ -11,7 +11,6 @@ const Videos = ({ videos, direction }) => {
                display: "flex",
                justifyContent: "center",
                alignItems: "center",
-
                height: "70vh",
             }}
          >
@@ -22,7 +21,7 @@ const Videos = ({ videos, direction }) => {
       <Stack
          direction={direction || "row"}
          flexWrap="wrap"
-         justifyContent="start"
+         justifyContent={justifyContent || "start"}
          gap={2}
       >
          {videos?.map((item, idx) => (

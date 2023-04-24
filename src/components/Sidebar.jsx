@@ -9,6 +9,7 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
          direction="row"
          sx={{
             overflowY: "auto",
+
             height: { sx: "auto", md: "85vh" },
 
             flexDirection: { md: "column" },
@@ -17,7 +18,7 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
          {categories.map((category, i) => (
             <button
                key={`${category} + ${i}`}
-               className={classes.category_btn}
+               className={`${classes.category_btn} px-2 py-0 md:px-3 md:py-3 mx-1 md:mx-0 `}
                onClick={() => setSelectedCategory(category.name)}
                style={{
                   backgroundColor:
